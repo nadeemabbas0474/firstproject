@@ -1,0 +1,256 @@
+@media only screen and (max-width: 984px) and (min-width:550px) {
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+    body{
+       padding: 0px;
+       margin: 0px;
+    }
+    .home1 .home-titles h1{
+        font-size: 26px;
+    }
+    .home1
+    {
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center center cover;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .home-titles p{
+        font-size: 12;
+        padding-right: 20px;
+    }
+
+    .information{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .me p{
+        padding-right: 10px;
+        width: 97%;
+        font-size: 7px;
+    }
+    .self{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        /* width: 96% */
+    }
+    .self .photo img{
+        width: 80%;
+    }
+    .information{
+       width: 100%;
+       flex-direction: column;
+   }
+    .about_me h1{
+        font-size: 23px;
+    }
+    .info h2, p{
+        font-size: 15px;
+    }
+.boxes-father {
+    flex-wrap: wrap;
+    width: 97%;
+    height: auto;
+    align-items: center;
+}
+.box {
+    width: 40%;
+}
+ .My-Edu p,.My-Exp p{
+    line-height: 18px;
+    font-size: 12px;
+ }
+ .My-Edu h3, .My-Exp h3{
+    font-size: 14px;
+ }
+.exp, .Edu{
+    width: 98%;
+    margin-right: 10px;
+}
+    .services .box{
+        width: 89%;
+        background-color: whitesmoke;   
+        }
+        .services .box h2{
+            font-size: 15px;
+         }
+         .Works{
+            flex-direction: row;   
+            }
+            #My-Works h1{
+                font-family: 'Poppins', sans-serif;
+                font-size: 0.6rem;
+                }
+            .Works .box{
+                border-radius: 5px;
+                height: auto;
+                width: 90%;
+                height: 90%;
+                font-size: 5px;
+                text-align: center;
+                background-color: whitesmoke;
+                margin-left: 06px; 
+                }
+                .Works .box i{
+                    visibility: hidden;
+                }
+            .Works .box p{
+                color: blue;
+                font-size: 5px;
+                padding-bottom:30px;
+        
+                }
+                .blog-lo-sec h2{
+                    font-size: 15px;
+                 }
+                 .blog-lo-sec p{
+                 font-size: 5px;
+                 }
+                 .footer .footer-Address p{
+                    font-size: 15px;
+                  }
+                 
+  }
+/* ////////////////////////////////////////////////
+                    moblie
+////////////////////////////////////////////////*/
+@media only screen and (max-width:550px) and (min-width:0px){
+    .info{visibility: visible;
+    width: 60%;
+    flex-wrap: wrap;
+    }
+    .home1 .home-titles p{
+        width: 80%;
+        font-size: 10;
+    }
+    .home1 .home-titles h1{
+        font-size: 18px;
+    }
+    .home1
+    {
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center center cover;
+        background-size: cover;
+    }
+    body{
+        padding: 05px;
+    }
+    .about_me{
+        padding-top: 10px;
+        margin-left: 10px;
+        width: 100%;
+    }
+    .about-main h1{
+        font-size: 0.6rem;
+        padding-bottom: 05px;
+        margin-top: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+     }
+     .info{
+         visibility: hidden;
+         flex-direction: column;
+         flex-wrap: wrap;
+     }
+     .info h2, p{
+        font-size: 18px;
+    }
+     .self{
+         flex-direction: column;
+         flex-wrap: wrap;
+         padding-left: 10px;
+         /* width: 96% */
+     }
+     .self .photo img{
+         width: 100%;
+         height: 340px;
+     }
+     .information{
+        flex-wrap: wrap;
+        width: 50%;
+        flex-direction: column;
+    }
+    .me p{
+        width: 95%;
+        font-size: 7px;
+
+    }
+    .about_me h1{
+        font-size: 15px;
+    }
+    .boxes-father {
+        flex-wrap: wrap;
+        width: 97%;
+    }
+    .boxes-father .box{
+        width: 98%;
+    }
+    .My-Edu p, .My-Exp p{
+        line-height: 12px;
+        font-size: 3px;
+     }
+    .exprience{
+         flex-wrap: wrap;
+         width: 94%;
+    }
+    .My-Edu h3, .My-Exp h3{
+        font-size: 10px;
+    }
+    .exp, .Edu{
+        width: 96%;
+        margin-right: 20px;
+    }
+    .services{
+        display: flex;
+       flex-wrap: wrap;
+       width: 84%;
+       flex-direction: column;
+    }
+    .services .box{
+        width: 90%;
+        background-color: whitesmoke;   
+    }
+    .Works{
+    flex-wrap: wrap;
+    width: 90%;
+    flex-direction: row;
+    }
+    .Works .box{
+    width: 90%;
+    background-color: whitesmoke;
+    }
+    .Clients{
+    width: 92%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .blogs .container{
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+    .blog-lo-sec h2{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    }
+    .blog-lo-sec p{
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    }
+    .Contact{
+    flex-wrap: wrap;
+     }
+    ul li a {
+        color: #000;
+        font-size: 10px;
+     }
+     .footer .footer-Address p{
+        font-size: 14px;
+      }
+}
