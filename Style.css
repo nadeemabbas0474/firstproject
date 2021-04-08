@@ -7,60 +7,139 @@ body{
    padding: 0px;
    margin: 0px;
 }
-.header{
-   display: flex;
-   flex-direction: row;
-   width: 100%;
-   justify-content: space-around;
-   align-items: center;
-   height: 4.5rem;
-   }
-.header .logo h1{
-background-color: rgb(230, 34, 34);
-border-radius: 50%;
-color: white;
-width: 38px;
-text-align: center;
-   }
-.header .imag{
+nav{
+   height: 80px;
+   width: 	100%;
+     background: #2c3e50;
+     /* position: fixed; */
+}
+ul .imag{
+   float: right;
+   padding: 30px 40px 0px;
    cursor: pointer;
 }
-.header ul li {
-   margin: 0 0.5rem;
+ul .imag i{
+   color: white;
+   font-size: 1.3rem;
 }
-
-ul{
-   display: flex;
-   justify-content: center;
-   justify-content: space-around;
-   list-style: none;
+ul .logo{
+   color: rgb(240, 230, 230);
+   float: left;
+   padding: 20px 40px 0px;
 }
-ul li a {
+ul .logo h1{
+   background-color: rgb(230, 34, 34);
+   border-radius: 50%;
+   color: white;
+   height: 35px;
+   width: 38px;
+   padding: 4px 0px 0px;
+   text-align: center;
+      }
+nav ul{
+   text-align: center;
+   background-color:rgb(15, 2, 2);
+}
+nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 10px;
+}
+nav ul li a{
    position: relative;
-   color: rgb(7, 7, 7);
-   font-size: 23px;
+   color: white;
+   font-size: 1.2rem;
    padding: 5px 0px;
+   text-transform: uppercase;
 }
-ul li a:before{
+nav ul li a:before {
    position: absolute;
    content: '';
-   left: 0;
+   top: 0;
    bottom: 0;
    height: 3px;
    width: 100%;
-   background-color: red;
-   color: red;
+   background: rgb(241, 6, 6);
    transform: scaleX(0);
    transform-origin: right;
    transition: transform .4s linear;
 }
-ul li a:hover:before {
+nav ul li a:hover:before{
    transform: scaleX(1);
    transform-origin: left;
-   color: red;
 }
-ul li a:hover{
-   color: red;
+label #btn,
+label #cancel{
+   color: white;
+   font-size: 30px;
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+#check{
+   display: none;
+}
+@media (max-width: 900px){
+   nav ul li a{
+      font-size: 16px;
+   }
+}
+@media (max-width: 700px){
+   nav ul li a{
+      font-size: 15px;
+   }
+   nav ul .imag i{
+      visibility: visible;
+   }
+   ul .logo{
+      color: rgb(240, 230, 230);
+      float: left;
+      padding: 20px 10px 0px;
+   }
+}
+@media (max-width:545px){
+   label #btn{
+      display: block;
+   }
+   nav ul .imag i{
+      visibility:visible;
+      float: inline-end;
+   }
+   ul .logo{
+      color: rgb(240, 230, 230);
+      float: left;
+      padding: 10px 10px 0px;
+   }
+   ul{
+      position: fixed;
+      width: 75%;
+      height: 100vh;
+      background: #031425;
+      color: white;
+      /*top: 80px;*/
+      left: -100%;
+      text-align: center;
+      transition: all 3s ease-in-out;
+   }
+   nav ul li{
+      display: block;
+      margin: 20px 0;
+      line-height: 30px;
+   }
+   nav ul li a{
+      font-size:15px;
+   }
+   #check:checked ~ ul{
+      left: 0;
+   }
+   #check:checked ~ label #btn{
+      display: none;
+   }
+   #check:checked ~ label #cancel{
+      display: block;
+   }
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
